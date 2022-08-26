@@ -7,6 +7,8 @@
     <title>E-commerce</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
 </head>
 <body>
     <h1 class="visually-hidden">E-commerce: Home page</h1>
@@ -54,27 +56,145 @@
                             alt="User icon">
                         </li>
                         
+                        
                         <li class="badge-parent position-relative">
                             <span class="badge-my text-light position-absolute top-100 start-0 ps-2 pe-2 translate-middle border border-light rounded-pill">
                                 4
                             </span>
-                            <!-- <img src="./images/cart-icon.svg" width="25" height="18" alt=""> -->
-                            
                             <button class="btn btn-primary bg-transparent border-0 p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                                <img src="./images/cart-icon.svg" alt="">
+                                <img src="./images/cart-icon.svg" width="24" height="24" alt="Cart icon">
                             </button>
                             
                             
-
-
                             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                 <div class="offcanvas-header">
                                     <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping cart</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
+                                
                                 <div class="offcanvas-body">
-                                    ...
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex border-bottom w-100 pb-4">
+                                            <div>
+                                                <img src="./images/best-selling-card.jpg" width="100" height="67" alt="">
+                                                
+                                                <span class="offcanvas__span position-relative d-block">Wishlist</span>
+                                                <span class="offcanvas__span offcanvas__span-2 d-block">Compare</span>
+                                                <span class="offcanvas__span offcanvas__span-3 d-block">Remove</span>
+                                            </div>
+                                            
+                                            <div class="ms-3">
+                                                <h4 class="offcanvas__mid__title">
+                                                    Product title
+                                                </h4>
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <span class="text-muted" style="font-size: 12px;margin-right: 41px;">Farm: </span>
+                                                        Tharamis Farm
+                                                    </li>
+                                                    <li>
+                                                        <span class="text-muted" style="font-size: 12px;margin-right: 14px;">Freshness: </span>
+                                                        1 day old
+                                                    </li>
+                                                </ul>
+                                                
+                                                <span class="d-inline-flex mt-2 mb-3">
+                                                    <img src="./images/offcanvas-star-black.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                    <img src="./images/offcanvas-star-black.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                    <img src="./images/offcanvas-star-black.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                    <img src="./images/offcanvas-star-black.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                    <img src="./images/offcanvas-star-white.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                </span>
+                                                
+                                                <div>
+                                                    <pre class="offcanvas__pre mb-0">36.99 USD</pre>
+                                                    <ins class="offcanvas__ins">48.56 USD</ins>
+                                                    
+                                                    <ul class="offcanvas__btn__list list-unstyled">
+                                                        <li class="offcanvas__btn__item">
+                                                            1 pcs
+                                                        </li>
+                                                        <li class="offcanvas__btn__item">
+                                                            Pcs
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="d-flex w-100 pb-4 mt-3">
+                                            <div>
+                                                <img src="./images/best-selling-card.jpg" width="100" height="67" alt="">
+                                                
+                                                <span class="offcanvas__span position-relative d-block">Wishlist</span>
+                                                <span class="offcanvas__span offcanvas__span-2 d-block">Compare</span>
+                                                <span class="offcanvas__span offcanvas__span-3 d-block">Remove</span>
+                                            </div>
+                                            
+                                            <div class="ms-3">
+                                                <h4 class="offcanvas__mid__title">
+                                                    Product title
+                                                </h4>
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <span class="text-muted" style="font-size: 12px;margin-right: 41px;">Farm: </span>
+                                                        Tharamis Farm
+                                                    </li>
+                                                    <li>
+                                                        <span class="text-muted" style="font-size: 12px;margin-right: 14px;">Freshness: </span>
+                                                        1 day old
+                                                    </li>
+                                                </ul>
+                                                
+                                                <span class="d-inline-flex mt-2 mb-3">
+                                                    <img src="./images/offcanvas-star-black.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                    <img src="./images/offcanvas-star-black.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                    <img src="./images/offcanvas-star-black.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                    <img src="./images/offcanvas-star-black.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                    <img src="./images/offcanvas-star-white.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                </span>
+                                                
+                                                <div>
+                                                    <pre class="offcanvas__pre mb-0">36.99 USD</pre>
+                                                    <ins class="offcanvas__ins">48.56 USD</ins>
+                                                    
+                                                    <ul class="offcanvas__btn__list list-unstyled">
+                                                        <li class="offcanvas__btn__item">
+                                                            1 pcs
+                                                        </li>
+                                                        <li class="offcanvas__btn__item">
+                                                            Pcs
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                    <div class="position-absolute bottom-0 w-100">
+                                        <div class="border-bottom w-100">
+                                            <p class="offcanvas__bottom__desc">Subtotal</p>
+                                            <pre class="offcanvas__bottom__pre">73.98 USD</pre>
+                                        </div>
+                                        
+                                        <div class="d-flex justify-content-between pt-3 pb-3 pe-5">
+                                            <p class="mt-3 offcanvas__bottom__btn__desc">Continue shopping</p>
+                                            <button class="d-inline-block btn btn-success">Go to Checkout</button>
+                                        </div>
+                                    </div>
                                 </div>
+                                
+                                
                             </div>
                         </li>
                     </ul>
@@ -194,7 +314,7 @@
     </header>
     
     <main class="site-main">
-        <section class="category-home-menu">
+    <section class="category-home-menu">
             <div class="container">
                 <div class="row category-home__row">
                     <div class=" category-home-menu__right col-lg-4 col-xl-3 col-md-6 col-sm-3 col-12">
@@ -274,9 +394,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </section>
         
-        <section class="best-selling">
+    <section class="best-selling">
             <div class="container">
                 <div class="row justify-content-sm-between justify-content-lg-start">
                     <div class="category-home-menu__right col-lg-4 col-xl-3 col-md-6 col-sm-3 col-12">
@@ -459,9 +579,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
     
-    <!-- <section class="slider">
+    <section class="slider">
         <div class="container">
             <div class="headline__content justify-content-between d-flex align-items-center">
                 <h3 class="headline__heading">Section Headline</h3>
@@ -470,9 +590,6 @@
         </div>
         
         <ul class="d-flex slider-list position-relative">
-            <button type="button" class="position-absolute prev-btn">
-                <img src="./images/prev-btn.jpg" width="32" height="48" alt="">
-            </button>
             <li class="slider-item">
                 <blockquote cite="example.com">
                     “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
@@ -499,7 +616,7 @@
                     Name and Surname
                 </p>
             </li>
-            
+
             <li class="slider-item">
                 <blockquote cite="example.com">
                     “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
@@ -508,12 +625,8 @@
                     Name and Surname
                 </p>
             </li>
-            
-            <button type="button" class="position-absolute next-btn">
-                <img src="./images/next-btn.jpg" width="32" height="48" alt="">
-            </button>
         </ul>
-    </section> -->
+    </section>
     
     <section class="headeline">
         <div class="container">
@@ -709,7 +822,7 @@
             </div>
         </div>
     </section>
-</main> 
+</main>
 
 
 <footer class="site-footer">
@@ -848,6 +961,8 @@
 </footer>
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./slick-1.8.1/slick/slick.min.js"></script>
 <script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/main.js"></script>
 </body>

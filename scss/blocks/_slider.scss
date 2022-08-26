@@ -9,9 +9,10 @@
     list-style: none;
 }
 
+
 .slider-item{
     position: relative;
-    width: 369px;
+    width: 359px!important;
     margin: 0 32px;
     padding-top: 24px;
     padding-right: 32px;
@@ -20,9 +21,17 @@
     text-align: center;
     border: 1px solid #F1F1F1;
     border-radius: 12px;
+    & > blockquote{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+        color: #151515;
+    }
     &::after{
         position: absolute;
-        top: 206px;
+        top: 186px;
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -44,15 +53,8 @@
     color: #A9A9A9;
 }
 
-.prev-btn{
-    top: 30%;
-    border: none;
-    background-color: transparent;
-}
-
-.next-btn{
-    right: 0;
-    top: 10%;
-    border: none;
-    background-color: transparent;
+@media only screen and (max-width: 945px){
+    .slider-item{
+        width: 259px!important;
+    }
 }
