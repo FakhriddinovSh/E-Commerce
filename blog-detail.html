@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-detail Page</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <h1 class="visually-hidden">E-commerce: Home page</h1>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header-wrapper">
+                <div class="site-header__top pb-3 pt-3 d-flex align-items-center justify-content-between border-bottom">
+                    <div class="site-header__top-wrapper">
+                        <a class="text-decoration-none text-success" href="#">Chat with us</a>
+                        <a class="text-decoration-none text-dark ms-4 me-4" href="tel:+420336775664">+420 336 775 664</a>
+                        <a class="text-decoration-none text-dark" href="mailto:info@freshnesecom.com">info@freshnesecom.com</a>
+                    </div>
+                    
+                    <div class="site-header__top-wrapper">
+                        <a class="text-decoration-none text-success" href="#">Blog</a>
+                        <a class="text-decoration-none text-success ms-4 me-4" href="#">About Us</a>
+                        <a class="text-decoration-none text-success" href="#">Careers</a>
+                    </div>
+                </div>
+                
+                <div class="site-header__center d-flex justify-content-between">
+                    <a class="site-header__logo" href="./index.html">
+                        <img src="./images/site-logo.svg" 
+                        width="177" 
+                        height="50" 
+                        alt="E-commerce's logo">
+                    </a>
+                    
+                    <form class="form" action="https://echo.htmlacademy.ru/courses" method="post" autocomplete="off">
+                        <div class="input-group mb-3">  
+                            <a class="form__button btn btn-outline-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">All categories</a>
+                            <ul class="form__list position-absolute list-unstyled top-100">
+                                <li><a href="#">Something</a></li>
+                                <li><a href="#">Something</a></li>
+                                <li><a href="#">Something</a></li>
+                            </ul>
+                            <input class="form-control rounded" type="search" name="user_search"  aria-label="Text input with dropdown button" placeholder="Search Products, categories ...">
+                            <span class="form__search"></span>
+                        </div>
+                    </form>
+                    
+                    <ul class="form__users d-flex ps-0 align-items-center list-unstyled">
+                        <li class="me-5">
+                            <img src="./images/user-icon.svg" width="25" height="20" 
+                            alt="User icon">
+                        </li>
+                        
+                        <li class="badge-parent position-relative">
+                            <span class="badge-my text-light position-absolute top-100 start-0 ps-2 pe-2 translate-middle border border-light rounded-pill">
+                                4
+                            </span>
+                            <!-- <img src="./images/cart-icon.svg" width="25" height="18" alt=""> -->
+                            
+                            <button class="btn btn-primary bg-transparent border-0 p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <img src="./images/cart-icon.svg" alt="">
+                            </button>
+                            
+                            
+
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping cart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    ...
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="site-header__bottom">
+            <div class="container">
+                <ul class="list-unstyled site-header__list justify-content-between">
+                    <li class="site-header__item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pe-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Bakery
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="site-header__item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pe-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Fruit and vegetables
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="site-header__item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pe-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Meat and fish
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="site-header__item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pe-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Drinks
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="site-header__item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pe-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Kitchen
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="site-header__item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pe-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Special nutrition
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="site-header__item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pe-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Baby
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="site-header__item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pe-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pharmacy
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__wrapper">
+                <div class="d-flex justify-content-sm-between text-md-center text-lg-start text-xl-start text-xxl-start text-center flex-column flex-sm-row">
+                    <div class="site-footer__inner ">
+                        <strong class="site-footer__strong">
+                            Get in touch
+                        </strong>
+                        <ul class="list-unstyled mt-3">
+                            <li class="site-footer__item">
+                                <a href="#">About Us</a>
+                            </li>
+                            
+                            <li class="site-footer__item">
+                                <a href="#">Careers</a>
+                            </li>
+                            
+                            <li class="site-footer__item">
+                                <a href="#">Press Releases</a>
+                            </li>
+                            
+                            <li class="site-footer__item">
+                                <a href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="site-footer__inner ">
+                        <strong class="site-footer__strong">
+                            Connections
+                        </strong>
+                        <ul class="list-unstyled mt-3 d-flex flex-column">
+                            <li class="site-footer__item">
+                                <a href="#">Facebook</a>
+                            </li>
+                            
+                            <li class="site-footer__item">
+                                <a href="#">Twitter</a>
+                            </li>
+                            
+                            <li class="site-footer__item">
+                                <a href="#">Instagram</a>
+                            </li>
+                            
+                            <li class="site-footer__item">
+                                <a href="#">Youtube</a>
+                            </li>
+                            
+                            <li class="site-footer__item">
+                                <a href="#">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="site-footer__inner ">
+                        <strong class="site-footer__strong">
+                            Earnings
+                        </strong>
+                        <ul class="list-unstyled mt-3">
+                            <li class="site-footer__item">
+                                <a href="#">Become an Affiliate</a>
+                            </li>
+                            
+                            <li class="site-footer__item">
+                                <a href="#">Advertise your product</a>
+                            </li>
+                            
+                            <li class="site-footer__item">
+                                <a href="#">Sell on Market</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="site-footer__inner ">
+                        <strong class="site-footer__strong">
+                            Account
+                        </strong>
+                        <ul class="list-unstyled mt-3">
+                            <li class="site-footer__item">
+                                <a href="#">Your account</a>
+                            </li>
+                            
+                            <li class="site-footer__item">
+                                <a href="#">Returns Centre</a>
+                            </li>
+                            
+                            <li class="site-footer__item">
+                                <a href="#">100 % purchase protection</a>
+                            </li>
+                            
+                            <li class="site-footer__item">
+                                <a href="#">Chat with us</a>
+                            </li>
+                            
+                            <li class="site-footer__item">
+                                <a href="#">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="site-footer__bottom">
+                    <h3 class="site-footer__subtitle">
+                        Product tags
+                    </h3>
+                    
+                    <div >
+                        <button type="button" class="site-footer__buttons btn btn-light">Beans</button>
+                        <button type="button" class="site-footer__buttons btn btn-light">Carrots</button>
+                        
+                        <button type="button" class="site-footer__buttons btn btn-light">Apples</button>
+                        <button type="button" class="site-footer__buttons btn btn-light">Garlic</button>
+                        <button type="button" class="site-footer__buttons btn btn-light">Mushrooms</button>
+                        <button type="button" class="site-footer__buttons btn btn-light">Tomatoes</button>
+                        <button type="button" class="site-footer__buttons btn btn-light">Chilli peppers</button>
+                        <button type="button" class="site-footer__buttons btn btn-light">Broccoli</button>
+                        <button type="button" class="site-footer__buttons btn btn-light">Watermelons</button>
+                        <button type="button" class="site-footer__buttons btn btn-light">Oranges</button>
+                        <button type="button" class="site-footer__buttons btn btn-light">Bananas</button>
+                        <button type="button" class="site-footer__buttons btn btn-light">Grapes</button>
+                        <button type="button" class="site-footer__buttons btn btn-light">Cherries</button>
+                        <button type="button" class="site-footer__buttons btn btn-light">Meat</button>
+                        <button type="button" class="site-footer__buttons btn btn-light">Seo tag</button>
+                        <button type="button" class="site-footer__buttons btn btn-light">Fish</button>
+                        <button type="button" class="site-footer__buttons btn btn-light">Seo tag</button>
+                        <button type="button" class="site-footer__buttons btn btn-light">Fresh food</button>
+                        <button type="button" class="site-footer__buttons btn btn-light">Lemons</button>
+                    </div>
+                </div>
+                
+                <span class="mt-5 d-flex">Copyright © 2020 <a class="text-decoration-none text-dark ms-1" href="#">petrbilek.com</a></span>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

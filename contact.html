@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <h1 class="visually-hidden">E-commerce: Home page</h1>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header-wrapper">
+                <div class="site-header__top pb-3 pt-3 d-flex align-items-center justify-content-between border-bottom">
+                    <div class="site-header__top-wrapper">
+                        <a class="text-decoration-none text-success" href="#">Chat with us</a>
+                        <a class="text-decoration-none text-dark ms-4 me-4" href="tel:+420336775664">+420 336 775 664</a>
+                        <a class="text-decoration-none text-dark" href="mailto:info@freshnesecom.com">info@freshnesecom.com</a>
+                    </div>
+                    
+                    <div class="site-header__top-wrapper">
+                        <a class="text-decoration-none text-success" href="#">Blog</a>
+                        <a class="text-decoration-none text-success ms-4 me-4" href="#">About Us</a>
+                        <a class="text-decoration-none text-success" href="#">Careers</a>
+                    </div>
+                </div>
+                
+                <div class="site-header__center d-flex justify-content-between">
+                    <a class="site-header__logo" href="./index.html">
+                        <img src="./images/site-logo.svg" 
+                        width="177" 
+                        height="50" 
+                        alt="E-commerce's logo">
+                    </a>
+                    
+                    <form class="form" action="https://echo.htmlacademy.ru/courses" method="post" autocomplete="off">
+                        <div class="input-group mb-3">  
+                            <a class="form__button btn btn-outline-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">All categories</a>
+                            <ul class="form__list position-absolute list-unstyled top-100">
+                                <li><a href="#">Something</a></li>
+                                <li><a href="#">Something</a></li>
+                                <li><a href="#">Something</a></li>
+                            </ul>
+                            <input class="form-control rounded" type="search" name="user_search"  aria-label="Text input with dropdown button" placeholder="Search Products, categories ...">
+                            <span class="form__search"></span>
+                        </div>
+                    </form>
+                    
+                    <ul class="form__users d-flex ps-0 align-items-center list-unstyled">
+                        <li class="me-5">
+                            <img src="./images/user-icon.svg" width="25" height="20" 
+                            alt="User icon">
+                        </li>
+                        
+                        <li class="badge-parent position-relative">
+                            <span class="badge-my text-light position-absolute top-100 start-0 ps-2 pe-2 translate-middle border border-light rounded-pill">
+                                4
+                            </span>
+                            <!-- <img src="./images/cart-icon.svg" width="25" height="18" alt=""> -->
+                            
+                            <button class="btn btn-primary bg-transparent border-0 p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <img src="./images/cart-icon.svg" alt="">
+                            </button>
+                            
+                            
+
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping cart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    ...
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="site-header__bottom">
+            <div class="container">
+                <ul class="list-unstyled site-header__list justify-content-between">
+                    <li class="site-header__item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pe-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Bakery
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="site-header__item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pe-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Fruit and vegetables
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="site-header__item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pe-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Meat and fish
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="site-header__item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pe-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Drinks
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="site-header__item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pe-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Kitchen
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="site-header__item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pe-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Special nutrition
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="site-header__item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pe-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Baby
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="site-header__item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pe-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pharmacy
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
