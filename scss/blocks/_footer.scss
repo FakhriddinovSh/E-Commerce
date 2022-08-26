@@ -1,0 +1,42 @@
+.site-footer__bottom{
+    margin-top: 48px;
+}
+
+.site-footer__item{
+    margin-bottom: 16px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    & > a{
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 19px;
+        color: #6A983C;
+    }
+}
+
+.site-footer__wrapper{
+    margin-bottom: 48px;
+}
+
+.site-footer__inner {
+    margin-bottom: 20px;
+}
+
+.site-footer__subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #151515;
+}
+
+.site-footer__buttons{
+    margin-right: 16px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #151515;
+}

@@ -1,0 +1,19 @@
+.best-selling{
+    padding-top: 128px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 572px){
+    .selling-card{
+        margin: 0 auto;
+        &:nth-child(2){
+            margin: 20px auto;
+        }
+    }
+}
+
+@media screen and (min-width: 778px) {
+    .selling-card{
+        float: right;
+        margin-right: 30px;
+    }
+}
