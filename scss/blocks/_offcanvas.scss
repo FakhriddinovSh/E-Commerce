@@ -1,0 +1,121 @@
+.offcanvas__span{
+    position: relative;
+    margin-top: 10px;
+    padding-left: 18px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A9A9A9;
+    &::before{
+        position: absolute;
+        top: 3px;
+        left: 0;
+        content: "";
+        background-image: url("../images/heart-icon.svg");
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 12px;   
+    }
+}
+
+.offcanvas__span-2::before{
+    background-image: url("../images/compare-icon.svg");
+}
+
+.offcanvas__span-3::before{
+    background-image: url("../images/remove-icon.svg");
+}
+
+.offcanvas__mid__title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #151515;
+}
+
+.offcanvas__pre{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #6A983C;
+}
+
+.offcanvas__ins{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration-line: line-through;
+    color: #A9A9A9;
+}
+
+.offcanvas__btn__list{
+    position: absolute;
+    right: 20px;
+    top: 220px;
+    display: flex;
+    padding-top: 6.5px;
+    padding-left: 6px;
+    padding-right: 24px;
+    padding-bottom: 6.5px;
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+}
+
+.offcanvas__btn__item:first-child{
+    padding-right: 6px;
+    color: #D1D1D1;
+}
+
+.offcanvas__btn__item:last-child{
+    position: relative;
+    padding-left: 6px;
+    border-left: 1px solid #D1D1D1;
+    &::after{
+        position: absolute;
+        content: "";
+        background-image: url("../../images/offcanvas-btn-icon.svg");
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 12px;
+        right: -18px;
+        top: 7px;    
+    }
+}
+
+.offcanvas__bottom__desc{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.offcanvas__bottom__pre{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    color: #151515;
+}
+
+.offcanvas__bottom__btn__desc{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #151515;
+    
+}
+
+.offcanvas-title{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    color: #151515;
+    
+}
