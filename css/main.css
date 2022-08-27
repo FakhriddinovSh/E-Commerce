@@ -3655,7 +3655,103 @@ td {
   max-width: 468px;
 }
 
-/* End of Blog Detail Info Sectio */
+/* End of Blog Detail Info Section */
+/* Start Blog Detail Food Section */
+#blog-detail-food {
+  padding: 53px 0 16px 0;
+  background-color: #FDFDFD;
+  border-radius: 32px;
+}
+
+.blog-detail-food-part-title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog-detail-food-part-title {
+  margin: 0;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+.blog-detail-food-part-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  background-color: transparent;
+  border: none;
+}
+
+.blog-detail-food-part-btn::after {
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+  background-image: url("../images/right.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+}
+
+.blog-detail-food-box-list {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog-detail-food-item {
+  background-color: #FDFDFD;
+}
+
+.blog-detail-food-inner-item {
+  background-color: #FDFDFD;
+}
+
+@media only screen and (max-width: 790px) {
+  #blog-detail-food {
+    padding: 0 70px;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .blog-detail-food-part-title-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .blog-detail-food-box-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.blog-detail-footer {
+  padding-top: 64px;
+}
+
+/* End of Blog Detail Food Section */
 .site-footer__bottom {
   margin-top: 48px;
 }
