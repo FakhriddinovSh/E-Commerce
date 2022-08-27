@@ -3,18 +3,17 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl => new bootst
 
 
 $('.slider-list').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    responsive: [
-        {
-          breakpoint: 798,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 2
-          }
-        }
-    ]
-  });
-  
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 798,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 2
+      }
+    }
+  ]
+});
