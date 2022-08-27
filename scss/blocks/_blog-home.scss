@@ -126,7 +126,7 @@
     }
     
     .blog-home__content-wrapper{
-        width: 280px;
+        width: 257px;
     }
 
     .blog-home__subtitle{
@@ -135,7 +135,7 @@
         font-size: 16px;
         line-height: 33px;
         color: #FFFFFF;
-        text-align: center;
+        text-align: start;
     }
     
     .blog-home__subbutton{
@@ -151,7 +151,7 @@
     }
     
     .blog-home__card__two{
-        width: 269px;
+        width: 237px;
         margin: 0 31px;
     }
     
@@ -182,7 +182,6 @@
     
     .blog-home__item{
         width: 260px!important;
-        background:red;
         flex-direction: column-reverse;
         text-align: center;
         justify-content: center;

@@ -65,12 +65,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.slick-prev {
+.slick-prev{
   left: 0;
   top: 30%;
   background-image: url("../../images/prev-btn.png");
 }
-
 [dir="rtl"] .slick-prev {
   left: auto;
   right: -25px;
