@@ -1,0 +1,133 @@
+.b-lists{
+    padding: 0;
+}
+.b-archives{
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $black;
+}
+
+.month-link{
+    color: $green;
+    font-size: 14px;
+    line-height: 19px;
+    
+    &:not(:last-child){
+        margin-bottom: 12px;
+    }
+}
+
+.b-category-list{
+    margin-left: 0 !important;
+}
+
+.category-list{
+    margin-bottom: 48px;
+
+}
+
+.category-list .month-link{
+    font-size: 14px;
+    line-height: 19px;
+    color: #A9A9A9;
+}
+
+.b-join-title{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $black;
+}
+
+.b-join-text{
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: $grey-color;
+}
+
+.b-input-box{
+    display: flex;
+    
+}
+
+.b-label{
+    position: relative;
+    display: block;
+    max-width: 269px;
+    padding: 11px 0;
+    padding-left: 21px;
+    padding-right: 35px;
+    background-color: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+}
+
+.b-input{
+    padding-right: 35px;
+    background-color: transparent;
+    border: none;
+    
+    &::placeholder{
+        font-size: 14px;
+        line-height: 19px;
+        color: $grey-color;
+    }
+}
+
+.b-subscribe{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: $black;
+    border: none;
+    background-color: transparent;
+}
+
+
+.b-item{
+    max-width: 265px;
+}
+
+.item-card{
+    border: none !important;
+}
+
+.item-tag{
+    display: inline-block;
+    max-width: 40px !important;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    padding: 0 8px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 12px;
+    color: $green;
+    background-color: $green-bg;
+}
+
+.b-item-text{
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $black;
+}
+
+.item-author{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: $black;
+
+    &:first-child{
+        margin-right: 16px;
+    }
+}
