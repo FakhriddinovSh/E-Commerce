@@ -5,7 +5,7 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl => new bootst
 $('.slider-list').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2000,
   responsive: [
     {
