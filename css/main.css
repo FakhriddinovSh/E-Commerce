@@ -3728,7 +3728,16 @@ td {
 }
 
 .blog-detail-food-inner-item {
+  max-width: 269px;
   background-color: #FDFDFD;
+}
+
+.blog-detail-food-inner-item img {
+  width: 100%;
+}
+
+.blog-detail-food-inner-item .b-item-text {
+  font-family: "Poppins" sans-serif;
 }
 
 @media only screen and (max-width: 790px) {
