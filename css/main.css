@@ -2021,6 +2021,7 @@ td {
 }
 
 .b-item {
+  font-family: "Poppins", sans-serif;
   padding: 0 !important;
 }
 .b-item:not(:last-child) {
