@@ -98,3 +98,26 @@
         line-height: 18px;
     }
 }
+
+@include desktop-first(436px){
+    .b-title{
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+
+@include desktop-first(395px){
+    .b-title{
+        bottom: 40px;
+    }
+
+    .b-first{
+        bottom: 8px;
+    }
+}
+
+@include desktop-first(365px){
+    .b-title{
+        font-size: 12px;
+    }
+}

@@ -114,10 +114,17 @@
     
 }
 
-@include desktop-first(375px){
+@include desktop-first(420px){
     .more,
     .related{
         font-size: 15px;
+    }
+}
+
+@include desktop-first(375px){
+    .more,
+    .related{
+        font-size: 12px;
     }
 }
 
