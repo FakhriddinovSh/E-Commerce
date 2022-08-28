@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
 </head>
 <body>
-    <header class="site-header p-0">
+    <header class="site-header">
         <div class="container">
             <div class="site-header-wrapper">
                 <div class="site-header__top pb-3 pt-3 d-flex align-items-center justify-content-between border-bottom">
@@ -22,7 +22,7 @@
                     </div>
                     
                     <div class="site-header__top-wrapper">
-                        <a class="text-decoration-none text-success" href="#">Blog</a>
+                        <a class="text-decoration-none text-success" href="./blog-detail.html">Blog</a>
                         <a class="text-decoration-none text-success ms-4 me-4" href="#">About Us</a>
                         <a class="text-decoration-none text-success" href="#">Careers</a>
                     </div>
@@ -38,7 +38,7 @@
                     
                     <form class="form" action="https://echo.htmlacademy.ru/courses" method="post" autocomplete="off">
                         <div class="input-group mb-3">  
-                            <a class="form__button btn btn-outline-secondary">All categories</a>
+                            <a class="form__button btn btn-outline-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">All categories</a>
                             <ul class="form__list position-absolute list-unstyled top-100">
                                 <li><a href="#">Something</a></li>
                                 <li><a href="#">Something</a></li>
@@ -55,26 +55,142 @@
                             alt="User icon">
                         </li>
                         
+                        
                         <li class="badge-parent position-relative">
                             <span class="badge-my text-light position-absolute top-100 start-0 ps-2 pe-2 translate-middle border border-light rounded-pill">
                                 4
                             </span>
-                            <!-- <img src="./images/cart-icon.svg" width="25" height="18" alt=""> -->
-                            
                             <button class="btn btn-primary bg-transparent border-0 p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                                <img src="./images/cart-icon.svg" alt="">
+                                <img src="./images/cart-icon.svg" width="24" height="24" alt="Cart icon">
                             </button>
                             
                             
-
-
                             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                 <div class="offcanvas-header">
                                     <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping cart</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
+                                
                                 <div class="offcanvas-body">
-                                    ...
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex border-bottom w-100 pb-4">
+                                            <div>
+                                                <img src="./images/best-selling-card.jpg" width="100" height="67" alt="">
+                                                
+                                                <span class="offcanvas__span position-relative d-block">Wishlist</span>
+                                                <span class="offcanvas__span offcanvas__span-2 d-block">Compare</span>
+                                                <span class="offcanvas__span offcanvas__span-3 d-block">Remove</span>
+                                            </div>
+                                            
+                                            <div class="ms-3">
+                                                <h4 class="offcanvas__mid__title">
+                                                    Product title
+                                                </h4>
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <span class="text-muted" style="font-size: 12px;margin-right: 41px;">Farm: </span>
+                                                        Tharamis Farm
+                                                    </li>
+                                                    <li>
+                                                        <span class="text-muted" style="font-size: 12px;margin-right: 14px;">Freshness: </span>
+                                                        1 day old
+                                                    </li>
+                                                </ul>
+                                                
+                                                <span class="d-inline-flex mt-2 mb-3">
+                                                    <img src="./images/offcanvas-star-black.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                    <img src="./images/offcanvas-star-black.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                    <img src="./images/offcanvas-star-black.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                    <img src="./images/offcanvas-star-black.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                    <img src="./images/offcanvas-star-white.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                </span>
+                                                
+                                                <div>
+                                                    <pre class="offcanvas__pre mb-0">36.99 USD</pre>
+                                                    <ins class="offcanvas__ins">48.56 USD</ins>
+                                                    
+                                                    <ul class="offcanvas__btn__list list-unstyled">
+                                                        <li class="offcanvas__btn__item">
+                                                            1 pcs
+                                                        </li>
+                                                        <li class="offcanvas__btn__item">
+                                                            Pcs
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="d-flex w-100 pb-4 mt-3">
+                                            <div>
+                                                <img src="./images/best-selling-card.jpg" width="100" height="67" alt="">
+                                                
+                                                <span class="offcanvas__span position-relative d-block">Wishlist</span>
+                                                <span class="offcanvas__span offcanvas__span-2 d-block">Compare</span>
+                                                <span class="offcanvas__span offcanvas__span-3 d-block">Remove</span>
+                                            </div>
+                                            
+                                            <div class="ms-3">
+                                                <h4 class="offcanvas__mid__title">
+                                                    Product title
+                                                </h4>
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <span class="text-muted" style="font-size: 12px;margin-right: 41px;">Farm: </span>
+                                                        Tharamis Farm
+                                                    </li>
+                                                    <li>
+                                                        <span class="text-muted" style="font-size: 12px;margin-right: 14px;">Freshness: </span>
+                                                        1 day old
+                                                    </li>
+                                                </ul>
+                                                
+                                                <span class="d-inline-flex mt-2 mb-3">
+                                                    <img src="./images/offcanvas-star-black.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                    <img src="./images/offcanvas-star-black.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                    <img src="./images/offcanvas-star-black.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                    <img src="./images/offcanvas-star-black.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                    <img src="./images/offcanvas-star-white.svg" width="14" height="13" 
+                                                    alt="Black star icon">
+                                                </span>
+                                                
+                                                <div>
+                                                    <pre class="offcanvas__pre mb-0">36.99 USD</pre>
+                                                    <ins class="offcanvas__ins">48.56 USD</ins>
+                                                    
+                                                    <ul class="offcanvas__btn__list  list-unstyled" style="top: 430px;">
+                                                        <li class="offcanvas__btn__item">
+                                                            1 pcs
+                                                        </li>
+                                                        <li class="offcanvas__btn__item">
+                                                            Pcs
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                    <div class="position-absolute bottom-0 w-100">
+                                        <div class="border-bottom w-100">
+                                            <p class="offcanvas__bottom__desc">Subtotal</p>
+                                            <pre class="offcanvas__bottom__pre">73.98 USD</pre>
+                                        </div>
+                                        
+                                        <div class="d-flex justify-content-between pt-3 pb-3 pe-5">
+                                            <p class="mt-3 offcanvas__bottom__btn__desc">Continue shopping</p>
+                                            <button class="d-inline-block btn btn-success">Go to Checkout</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -105,8 +221,8 @@
                                 Fruit and vegetables
                             </button>
                             <ul class="dropdown-menu">
-                                <li><button class="dropdown-item" type="button">Action</button></li>
-                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><a href="./categories.html" class="dropdown-item" type="button">Fruits</a></li>
+                                <li><a href="./details.html" class="dropdown-item" type="button">Vegetables</a></li>
                                 <li><button class="dropdown-item" type="button">Something else here</button></li>
                             </ul>
                         </div>
