@@ -1109,6 +1109,7 @@ li {
   padding-bottom: 24px;
   background-image: url("../images/blog-home-main.jpg");
   background-repeat: no-repeat;
+  border-radius: 10px;
 }
 
 .blog-home__subtitle {
@@ -1210,7 +1211,7 @@ li {
 }
 @media only screen and (max-width: 500px) {
   .blog-home__card__one {
-    width: 70%;
+    width: 100%;
     max-width: 469px;
     padding-top: 24px;
     padding-left: 24px;
@@ -1219,9 +1220,10 @@ li {
     background-image: url("../images/blog-home-main.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 10px;
   }
   .blog-home__content-wrapper {
-    width: 257px;
+    width: 220px;
   }
   .blog-home__subtitle {
     margin: auto;
@@ -1348,6 +1350,12 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+<<<<<<< HEAD
+=======
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> 52123b82bd9976b605559498dd4864491869da4e
   min-width: 280px;
 }
 
@@ -1361,7 +1369,10 @@ li {
   height: 16px;
   background-color: transparent;
   border: none;
+<<<<<<< HEAD
   padding-right: 15px;
+=======
+>>>>>>> 52123b82bd9976b605559498dd4864491869da4e
 }
 
 .category-grid, .category-list {
@@ -1530,6 +1541,10 @@ li {
 }
 
 .categories-page-left-item {
+<<<<<<< HEAD
+=======
+  min-width: 200px;
+>>>>>>> 52123b82bd9976b605559498dd4864491869da4e
   max-width: 250px;
   margin-bottom: 12px;
   font-family: "Open Sans";
@@ -1884,7 +1899,11 @@ input[type=range]::-moz-range-thumb {
 /*-----------grid-and-list active classes----------- */
 .categories-page-card-list {
   position: relative;
+<<<<<<< HEAD
   max-width: 268px;
+=======
+  width: 268px;
+>>>>>>> 52123b82bd9976b605559498dd4864491869da4e
   height: 100%;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -1897,8 +1916,13 @@ input[type=range]::-moz-range-thumb {
 
 .categories-page-card-list-img {
   border-radius: 12px;
+<<<<<<< HEAD
   max-width: 100%;
   height: 100%;
+=======
+  width: 236px;
+  height: 180px;
+>>>>>>> 52123b82bd9976b605559498dd4864491869da4e
   margin-bottom: 16px;
 }
 
@@ -2036,6 +2060,12 @@ input[type=range]::-moz-range-thumb {
   }
 }
 @media only screen and (max-width: 630px) {
+<<<<<<< HEAD
+=======
+  .container {
+    padding: 0 15px;
+  }
+>>>>>>> 52123b82bd9976b605559498dd4864491869da4e
   .categories-right-card-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2045,9 +2075,12 @@ input[type=range]::-moz-range-thumb {
         -ms-flex-align: center;
             align-items: center;
   }
+<<<<<<< HEAD
   .category-page-top-box {
     min-width: 0;
   }
+=======
+>>>>>>> 52123b82bd9976b605559498dd4864491869da4e
 }
 .category-menu {
   padding-top: 64px;
@@ -2218,10 +2251,16 @@ input[type=range]::-moz-range-thumb {
     gap: 50px;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 420px) {
   .more,
 .related {
     font-size: 15px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .more,
+.related {
+    font-size: 12px;
   }
 }
 p {
@@ -2569,12 +2608,23 @@ td {
     font-size: 14px;
   }
   .compare {
+    margin-left: 20px;
     font-size: 14px;
+  }
+}
+@media only screen and (max-width: 389px) {
+  .wish,
+.compare {
+    font-size: 12px;
   }
 }
 @media only screen and (max-width: 360px) {
   .compare {
     margin-left: 10px;
+  }
+  .wish,
+.compare {
+    font-size: 10px;
   }
 }
 .b-lists {
@@ -2799,6 +2849,11 @@ td {
   margin: 0px !important;
 }
 
+.k-next-page::after {
+  -webkit-transform: rotate(269deg) !important;
+          transform: rotate(269deg) !important;
+}
+
 @media only screen and (max-width: 800px) {
   .b-wrapper {
     -webkit-box-orient: vertical;
@@ -2825,6 +2880,25 @@ td {
   .b-title {
     font-size: 16px;
     line-height: 18px;
+  }
+}
+@media only screen and (max-width: 436px) {
+  .b-title {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+@media only screen and (max-width: 395px) {
+  .b-title {
+    bottom: 40px;
+  }
+  .b-first {
+    bottom: 8px;
+  }
+}
+@media only screen and (max-width: 365px) {
+  .b-title {
+    font-size: 12px;
   }
 }
 /* Start Contact Section */
@@ -4509,7 +4583,7 @@ td {
 
 @media only screen and (max-width: 790px) {
   #blog-detail-food {
-    padding: 0 70px;
+    padding: 70px 0;
   }
 }
 @media only screen and (max-width: 690px) {

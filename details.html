@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <h1 class="visually-hidden">E-commerce: Home page</h1>
     <header class="site-header">
         <div class="container">
             <div class="site-header-wrapper">
@@ -21,7 +20,7 @@
                     </div>
                     
                     <div class="site-header__top-wrapper">
-                        <a class="text-decoration-none text-success" href="#">Blog</a>
+                        <a class="text-decoration-none text-success" href="./blog-detail.html">Blog</a>
                         <a class="text-decoration-none text-success ms-4 me-4" href="#">About Us</a>
                         <a class="text-decoration-none text-success" href="#">Careers</a>
                     </div>
@@ -37,7 +36,7 @@
                     
                     <form class="form" action="https://echo.htmlacademy.ru/courses" method="post" autocomplete="off">
                         <div class="input-group mb-3">  
-                            <a class="form__button btn btn-outline-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">All categories</a>
+                            <a href="#" class="form__button btn btn-outline-secondary"  data-bs-toggle="dropdown" aria-expanded="false">All categories</a>
                             <ul class="form__list position-absolute list-unstyled top-100">
                                 <li><a href="#">Something</a></li>
                                 <li><a href="#">Something</a></li>
@@ -166,7 +165,7 @@
                                                     <pre class="offcanvas__pre mb-0">36.99 USD</pre>
                                                     <ins class="offcanvas__ins">48.56 USD</ins>
                                                     
-                                                    <ul class="offcanvas__btn__list list-unstyled">
+                                                    <ul class="offcanvas__btn__list  list-unstyled" style="top: 430px;">
                                                         <li class="offcanvas__btn__item">
                                                             1 pcs
                                                         </li>
@@ -187,12 +186,10 @@
                                         
                                         <div class="d-flex justify-content-between pt-3 pb-3 pe-5">
                                             <p class="mt-3 offcanvas__bottom__btn__desc">Continue shopping</p>
-                                            <button class="d-inline-block btn btn-success">Go to Checkout</button>
+                                            <a href="./contact.html" class="d-inline-block btn btn-success">Go to Checkout</a>
                                         </div>
                                     </div>
                                 </div>
-                                
-                                
                             </div>
                         </li>
                     </ul>
@@ -222,8 +219,8 @@
                                 Fruit and vegetables
                             </button>
                             <ul class="dropdown-menu">
-                                <li><button class="dropdown-item" type="button">Action</button></li>
-                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                                <li><a href="./categories.html" class="dropdown-item" >Fruits</a></li>
+                                <li><a href="./details.html" class="dropdown-item" >Vegetables</a></li>
                                 <li><button class="dropdown-item" type="button">Something else here</button></li>
                             </ul>
                         </div>
@@ -310,7 +307,6 @@
             </div>
         </div>
     </header>
-    
 
     <main class="site-main">
         
@@ -631,7 +627,6 @@
             </section>
             
     </main>
-    
     
     <footer class="site-footer">
         <div class="container">

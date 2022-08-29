@@ -349,12 +349,25 @@ td{
     }
     
     .compare{
+        margin-left: 20px;
         font-size: 14px;
+    }
+}
+
+@include desktop-first(389px){
+    .wish,
+    .compare{
+        font-size: 12px ;
     }
 }
 
 @include desktop-first(360px){
     .compare{
         margin-left: 10px;
+    }
+
+    .wish,
+    .compare{
+        font-size: 10px;
     }
 }
