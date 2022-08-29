@@ -12,6 +12,7 @@
     padding-bottom: 24px;
     background-image: url("../images/blog-home-main.jpg");
     background-repeat: no-repeat;
+    border-radius: 10px;
 }
 
 .blog-home__subtitle{
@@ -114,7 +115,7 @@
 
 @media only screen and (max-width: 500px){
     .blog-home__card__one{
-        width: 70%;
+        width: 100%;
         max-width: 469px;
         padding-top: 24px;
         padding-left: 24px;
@@ -123,10 +124,11 @@
         background-image: url("../images/blog-home-main.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        border-radius: 10px;
     }
     
     .blog-home__content-wrapper{
-        width: 257px;
+        width: 220px;
     }
 
     .blog-home__subtitle{

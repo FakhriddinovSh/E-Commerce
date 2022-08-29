@@ -1109,6 +1109,7 @@ li {
   padding-bottom: 24px;
   background-image: url("../images/blog-home-main.jpg");
   background-repeat: no-repeat;
+  border-radius: 10px;
 }
 
 .blog-home__subtitle {
@@ -1210,7 +1211,7 @@ li {
 }
 @media only screen and (max-width: 500px) {
   .blog-home__card__one {
-    width: 70%;
+    width: 100%;
     max-width: 469px;
     padding-top: 24px;
     padding-left: 24px;
@@ -1219,9 +1220,10 @@ li {
     background-image: url("../images/blog-home-main.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 10px;
   }
   .blog-home__content-wrapper {
-    width: 257px;
+    width: 220px;
   }
   .blog-home__subtitle {
     margin: auto;
@@ -2040,7 +2042,7 @@ input[type=range]::-moz-range-thumb {
 }
 @media only screen and (max-width: 630px) {
   .container {
-    padding: 0 50px;
+    padding: 0 15px;
   }
   .categories-right-card-row {
     -webkit-box-orient: vertical;
@@ -4553,7 +4555,7 @@ td {
 
 @media only screen and (max-width: 790px) {
   #blog-detail-food {
-    padding: 0 70px;
+    padding: 70px 0;
   }
 }
 @media only screen and (max-width: 690px) {
